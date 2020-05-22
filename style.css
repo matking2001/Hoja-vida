@@ -1,9 +1,15 @@
+body{
+	background-color: black;
+}
+
 .contenedor{
 	width: 1000px;
-	height: 1000px;
+	height: 1500px;
 	border: 1px solid red;
     margin: auto;
-    margin-top: 10px;
+	margin-top: 10px;
+	/*background-image: url(imagenes/img5.jpg);*/
+	border-radius: 30px 30px 0 0;
 }
 .contenedor .anuncio {
 	width: 1000px;
@@ -42,7 +48,7 @@
 	height: 320px;
     background-color: #dfe6e9;
     margin-top: 10px;
-    border-radius: 0 0 30px 30px;
+    border-radius: 30px 30px 0 0;
 }
 
 .contenedor .acerca-mi div{
@@ -61,12 +67,27 @@
 }
 
 .contenedor .servicios {
-	width: 1000px;
-    height: 320px;
-    background-color: seagreen;
-    margin-top: 10px;
-    border-radius: 30px;
+	width: 450px;
+    height: 300px;
+    background-color: #dfe6e9;
+	border-radius: 0 0 30px 30px;
+	margin: auto;
 }
+
+.contenedor .servicios label{
+	font-size: 30px;
+	font-family: sans-serif;
+	color: black;
+	margin-left: 27%;
+}
+
+.contenedor .c-servicio {
+	width: 1000px;
+    height: 375px;
+    background-color: #dfe6e9;
+    border-radius: 0 0 30px 30px;
+}
+
 .contenedor .header .nombre .label {
 	color: black;
 	font-size: 30px;
@@ -74,4 +95,14 @@
 	float: none;
     margin-left: 50px;
     margin-top: 20px;
+}
+
+#img{
+	width: 20px;
+	height: 200px;
+}
+
+#p{
+	font-family: sans-serif;
+	align-items: center;
 }
