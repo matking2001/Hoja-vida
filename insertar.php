@@ -33,7 +33,7 @@
             $date2= trim($_POST['nombre']);
             $date3= trim($_POST['correo']);
             $date4= trim($_POST['curso']);
-            //$date5= trim($_POST['mensaje']);
+            $date5= trim($_POST['mensaje']);
             $datos= "INSERT INTO `servicio`(`Id`,`Nombre`,`Correo`,`Servicio`,`Mensaje`) VALUES (`$date1`,`$date2`,`$date3`,`$date4`,`$date5`)";
             $reg= mysqli_query($connect,$datos);
 

@@ -290,30 +290,36 @@
           </div>
         </div>
       </div>
-      <footer class="page-footer font-small blue pt-4">Hecho por Mateo Balza</footer>
+      
       <div class="c-contacto">
         <div class="contacto">
-          <label for="">CONTACTO</label>
+          <label id="label"for="">CONTACTO</label>
           <form class="formulario" method="POST">
-            <label for="">ID:</label>
-            <input type="number" name="id">
-            <label for="">Nombre: </label>
-            <input type="text" name="" name="nombre">
-            <label for="">Correo: </label>
-            <input type="email" name="correo">
-            <label for="">Servicios: </label>
-            <select name="curso" id="">
+            <label class="label" for="">ID:</label>
+            <input class="dato1" type="number" name="id">
+            <br>
+            <label class="label" for="">Nombre: </label>
+            <input class="dato2" type="text" name="" name="nombre">
+            <br>
+            <label class="label" for="">Correo: </label>
+            <input class="dato3" type="email" name="correo">
+            <br>
+            <label class="label" for="">Servicios: </label>
+            <select class="dato4" name="curso" id="">
               <option value="Responsive">Curso Responsive</option>
               <option value="PHP">Curso PHP</option>
               <option value="Angular">Curso Angular</option>
               <option value="Master desarrollo web">Master Desarrollo web</option>
             </select>
-            <label for="">Mensaje:</label>
-            <textarea name="" id="" cols="50" rows="5" name="mensaje"></textarea>
-            <input type="submit" class="btn-primary" name="validar" value="Enviar">
+            <br>
+            <label class="label l5" for="">Mensaje:</label>
+            <textarea class="dato5" name="" id="" cols="50" rows="5" name="mensaje"></textarea>
+            <br>
+            <input type="submit" class="boton" name="validar" value="Enviar">
           </form>
         </div>
       </div>
+      <footer class="page-footer font-small blue pt-4">Hecho por Mateo Balza</footer>
     </div>
       
 
