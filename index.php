@@ -296,7 +296,7 @@
           <label id="label"for="">CONTACTO</label>
           <form class="formulario" method="POST">
             <label class="label" for="">ID:</label>
-            <input class="dato1" type="number" name="id">
+            <input class="dato1" type="text" name="id">
             <br>
             <label class="label" for="">Nombre: </label>
             <input class="dato2" type="text" name="" name="nombre">
