@@ -296,16 +296,16 @@
           <label id="label"for="">CONTACTO</label>
           <form class="formulario" method="POST">
             <label class="label" for="">ID:</label>
-            <input class="dato1" type="text" name="id">
+            <input class="dato1" type="number" name="id" min="8" pattern="[0-9]{10}" required autofocus>
             <br>
             <label class="label" for="">Nombre: </label>
-            <input class="dato2" type="text" name="" name="nombre">
+            <input class="dato2" type="text" pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúčšžûüųūÿýżźñçÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]{2,20}" maxlength="20" size="20" name="nombre" required>
             <br>
             <label class="label" for="">Correo: </label>
             <input class="dato3" type="email" name="correo">
             <br>
             <label class="label" for="">Servicios: </label>
-            <select class="dato4" name="curso" id="">
+            <select class="dato4" name="curso" id="" required>
               <option value="Responsive">Curso Responsive</option>
               <option value="PHP">Curso PHP</option>
               <option value="Angular">Curso Angular</option>
@@ -313,7 +313,7 @@
             </select>
             <br>
             <label class="label l5" for="">Mensaje:</label>
-            <textarea class="dato5" name="" id="" cols="50" rows="5" name="mensaje"></textarea>
+            <input type="text" class="dato5" name="mensaje" required>
             <br>
             <input type="submit" class="boton" name="validar" value="Enviar">
           </form>
