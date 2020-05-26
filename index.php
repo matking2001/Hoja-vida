@@ -33,9 +33,9 @@
         <div class="nombre"><label class="label" for="">MATEO</label></div>
         <div class="nav">
           <ul>
-            <li><a href="#">ACERCA DE MI</a></li>
-            <li><a href="#">SERVICIOS</a></li>
-            <li><a href="#">PORTAFOLIO</a></li>
+            <li><a href="acerca-mi.html">ACERCA DE MI</a></li>
+            <li><a href="servicio.html">SERVICIOS</a></li>
+            <li><a href="portafolio.html">PORTAFOLIO</a></li>
             <li><a href="#">CONTACTO</a></li>
           </ul>
         </div>
@@ -67,7 +67,7 @@
           </tbody>
         </table>
       </div>
-      <div class="acerca-mi">
+     <!-- <div class="acerca-mi">
         <div>
           <label>ACERCA DE MI</label>
         </div>
@@ -126,8 +126,8 @@
             </tr>
           </tbody>
         </table>
-      </div>
-      <div class="c-servicio">
+      </div>-->
+      <!--<div class="c-servicio">
         <div class="servicios">
           <label for="">SERVICIOS</label>
           <div
@@ -206,9 +206,9 @@
             </a>
           </div>
         </div>
-      </div>
+      </div>-->
 
-      <div class="c-portafolio">
+      <!--<div class="c-portafolio">
         <div class="portafolio">
           <label for="">PORTAFOLIO</label>
           <div
@@ -289,7 +289,7 @@
             </a>
           </div>
         </div>
-      </div>
+      </div>-->
       
       <div class="c-contacto">
         <div class="contacto">
