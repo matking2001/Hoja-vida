@@ -66,6 +66,7 @@
             </tr>
           </tbody>
         </table>
+        <img src="" alt="">
       </div>
      <!-- <div class="acerca-mi">
         <div>
