@@ -34,8 +34,9 @@
             $correo= trim($_POST['d3']);
             $curso= trim($_POST['d4']);
             $mensaje= trim($_POST['d5']);
-            $datos= 'INSERT INTO `service`(`id`,`nombre`,`correo`,`curso`,`mensaje`) VALUES (`$id`,`$nombre`,`$correo`,`$curso`,`$mensaje`)';
-            $reg= mysqli_query($connect,$datos);
+            $insertar= "INSERT INTO `service`(`id`,`nombre`,`correo`,`curso`,`mensaje`) VALUES ('$id','$nombre','$correo','$curso','$mensaje')";
+            
+            $reg= mysqli_query($connect,$insertar);
 
             if($reg){
                 ?>

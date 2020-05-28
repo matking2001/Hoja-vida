@@ -73,13 +73,13 @@
           <label id="label"for="">CONTACTO</label>
           <form class="formulario" method="POST">
             <label class="label" for="">ID:</label>
-            <input class="dato1" type="text" name="d1" required autofocus>
+            <input class="dato1" type="number" name="d1" min="0" pattern="[0-9]{11}" required autofocus>
             <br>
             <label class="label" for="">Nombre: </label>
             <input class="dato2" type="text" pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúčšžûüųūÿýżźñçÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]{2,20}" maxlength="20" size="20" name="d2" required>
             <br>
             <label class="label" for="">Correo: </label>
-            <input class="dato3" type="text" name="d3">
+            <input class="dato3" type="email" name="d3">
             <br>
             <label class="label" for="">Servicios: </label>
             <select class="dato4" name="d4" id="" required>
