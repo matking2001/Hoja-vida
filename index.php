@@ -73,16 +73,16 @@
           <label id="label"for="">CONTACTO</label>
           <form class="formulario" method="POST">
             <label class="label" for="">ID:</label>
-            <input class="dato1" type="number" name="id" required autofocus>
+            <input class="dato1" type="text" name="d1" required autofocus>
             <br>
             <label class="label" for="">Nombre: </label>
-            <input class="dato2" type="text" pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúčšžûüųūÿýżźñçÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]{2,20}" maxlength="20" size="20" name="nombre" required>
+            <input class="dato2" type="text" pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúčšžûüųūÿýżźñçÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]{2,20}" maxlength="20" size="20" name="d2" required>
             <br>
             <label class="label" for="">Correo: </label>
-            <input class="dato3" type="email" name="correo">
+            <input class="dato3" type="text" name="d3">
             <br>
             <label class="label" for="">Servicios: </label>
-            <select class="dato4" name="curso" id="" required>
+            <select class="dato4" name="d4" id="" required>
               <option value="Responsive">Curso Responsive</option>
               <option value="PHP">Curso PHP</option>
               <option value="Angular">Curso Angular</option>
@@ -90,7 +90,7 @@
             </select>
             <br>
             <label class="label l5" for="">Mensaje:</label>
-            <input type="text" class="dato5" name="mensaje" required>
+            <input type="text" class="dato5" name="d5" required>
             <br>
             <input type="submit" class="boton" name="validar" value="Enviar">
           </form>

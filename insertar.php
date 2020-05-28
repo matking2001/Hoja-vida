@@ -27,14 +27,14 @@
     }
 
     if(isset($_POST['validar'])){
-        if(isset($_POST['id']) && !empty($_POST['id']) && isset($_POST['nombre']) && !empty($_POST['nombre']) && isset($_POST['correo']) && !empty($_POST['correo'])
-        && isset($_POST['curso']) && !empty($_POST['curso']) && isset($_POST['mensaje']) && !empty($_POST['mensaje'])){
-            $date1= trim($_POST['id']);
-            $date2= trim($_POST['nombre']);
-            $date3= trim($_POST['correo']);
-            $date4= trim($_POST['curso']);
-            $date5= trim($_POST['mensaje']);
-            $datos= "INSERT INTO `servicio`(`Id`,`Nombre`,`Correo`,`Servicio`,`Mensaje`) VALUES (`$date1`,`$date2`,`$date3`,`$date4`,`$date5`)";
+        if(isset($_POST['d1']) && !empty($_POST['d1']) && isset($_POST['d2']) && !empty($_POST['d2']) && isset($_POST['d3']) && !empty($_POST['d3']) && isset($_POST['d4'])
+        && !empty($_POST['d4']) && isset($_POST['d5']) && !empty($_POST['d5'])){
+            $id= trim($_POST['d1']);
+            $nombre= trim($_POST['d2']);
+            $correo= trim($_POST['d3']);
+            $curso= trim($_POST['d4']);
+            $mensaje= trim($_POST['d5']);
+            $datos= 'INSERT INTO `service`(`id`,`nombre`,`correo`,`curso`,`mensaje`) VALUES (`$id`,`$nombre`,`$correo`,`$curso`,`$mensaje`)';
             $reg= mysqli_query($connect,$datos);
 
             if($reg){
