@@ -36,7 +36,7 @@
             <li><a href="acerca-mi.html">ACERCA DE MI</a></li>
             <li><a href="servicio.html">SERVICIOS</a></li>
             <li><a href="portafolio.html">PORTAFOLIO</a></li>
-            <li><a href="#">CONTACTO</a></li>
+            <li><a href="#f-contacto">CONTACTO</a></li>
           </ul>
         </div>
       </div>
@@ -67,8 +67,41 @@
           </tbody>
         </table>
        <div class="perfil"><img src="imagenes/fot-perfil.jpg"/ width="200px" height="220px"></div>
-      </div>  
-      <div class="c-contacto">
+      </div> 
+      <section id="f-contacto">
+          <div class="c-contacto">
+            <div class="contacto">
+              <label id="label"for="">CONTACTO</label>
+              <form class="formulario" method="POST">
+                <label class="label" for="">ID:</label>
+                <input  id="d1" class="dato1" type="number" name="d1" min="0" pattern="[0-9]{11}" required autofocus onpaste="return false">
+                <br>
+                <label class="label" for="">Nombre: </label>
+                <input  id="nombre" class="dato2" type="text" pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúčšžûüųūÿýżźñçÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]{2,20}" maxlength="30" size="30" name="d2" required onkeypress="return sololetras(event)" onpaste="return false">
+                <br>
+                <label class="label" for="">Correo: </label>
+                <input  id="d3" class="dato3" type="email" name="d3" onpaste="return false">
+                <br>
+                <label class="label" for="">Servicios: </label>
+                <select class="dato4" name="d4" id="" required>
+                  <option value="Responsive">Curso Responsive</option>
+                  <option value="PHP">Curso PHP</option>
+                  <option value="Angular">Curso Angular</option>
+                  <option value="Master desarrollo web">Master Desarrollo web</option>
+                </select>
+                <br>
+                <label class="label l5" for="">Mensaje:</label>
+                <input  id="d4" type="text" class="dato5" name="d5" required onpaste="return false">
+                <br>
+                <input type="submit" class="boton" name="validar" value="Enviar">
+                
+              </form>
+              <input class="boton-limpiar" type="button" value="Limpiar" onclick="borrar()">
+            </div>
+          </div>
+              
+      </section> 
+      <!--<div class="c-contacto">
         <div class="contacto">
           <label id="label"for="">CONTACTO</label>
           <form class="formulario" method="POST">
@@ -76,7 +109,7 @@
             <input class="dato1" type="number" name="d1" min="0" pattern="[0-9]{11}" required autofocus>
             <br>
             <label class="label" for="">Nombre: </label>
-            <input class="dato2" type="text" pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúčšžûüųūÿýżźñçÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]{2,20}" maxlength="20" size="20" name="d2" required>
+            <input class="dato2" type="text" pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúčšžûüųūÿýżźñçÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]{2,20}" maxlength="30" size="30" name="d2" required>
             <br>
             <label class="label" for="">Correo: </label>
             <input class="dato3" type="email" name="d3">
@@ -95,7 +128,7 @@
             <input type="submit" class="boton" name="validar" value="Enviar">
           </form>
         </div>
-      </div>
+      </div>-->
       <footer class="page-footer font-small blue pt-4">Hecho por Mateo Balza</footer>
     </div>
       
@@ -105,5 +138,8 @@
       include('insertar.php');
 
     ?>
+
+    <script src="main.js"></script>
+
   </body>
 </html>

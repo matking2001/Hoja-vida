@@ -207,12 +207,25 @@ footer{
 }
 
 .boton{
-	margin-top: 20px;
-	width: 200px;
+	margin-top: 40px;
+	width: 150px;
 	border-radius: 20px;
 	background: #2c3e50;
 	color: white;
-	margin-left: 38%;
+	margin-left: 35%;
+	outline: none;
+}
+
+.boton-limpiar{
+	margin-top: -29px;
+	width: 150px;
+	border-radius: 20px;
+	background: #2c3e50;
+	color: white;
+	margin-left: 55%;
+	outline: none;
+	border: 1px solid black;
+	float: left;
 }
 
 .l5{
